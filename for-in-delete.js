@@ -11,13 +11,13 @@
   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
 */
 
-// var values = {
-//   one: 'These',
-//   two: ' are',
-//   three: ' the',
-//   four: ' property',
-//   five: ' values.'
-// } 
+var values = {
+  one: 'These',
+  two: ' are',
+  three: ' the',
+  four: ' property',
+  five: ' values.'
+} 
 
 // for(var key in values) {
 //   console.log(values[key])
@@ -39,9 +39,12 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  //Code Here
-}
+function showValues( values, i ) {
+  for(var key in values)
+  var newArr = '';
+  newArr = values[key] += (one, two, three, four, five)
+  return newArr;
+};
 
 
 
@@ -53,8 +56,11 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
-
+function greaterThan10 (obj, i){
+  for( i =0; i<obj.length; i++) {
+    return i > 10 ? 0 : i;
+  }
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -65,7 +71,12 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
+function double (obj) {
+  for(let i = 0; i<obj.length; i++){
+    obj.push(i * 2);
+    return obj;
+  }
+}
 
 
 
