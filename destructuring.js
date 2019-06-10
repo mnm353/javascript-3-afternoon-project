@@ -131,8 +131,17 @@ const numberList = {
   c: [4, 2, 10]
 }
 
-function numberGroups( {a, b, c } ) {
+let { a, b, c } = numberList;
 
-}
+function numberGroups ({numberList}) {numberList.reduce((r, e, p, i) => r[p].length > e.length ? p : i), 0}
 
-
+// function numberGroups({numberList}) {numberGroups.reduce(a,i,ii)
+//   for(let i=0; i>length.numberList; i++)
+//   if (ii === 1){
+//     return a
+//   };
+//   if (i.length > a.length){
+//     return i
+//   }
+//   return a
+// }
