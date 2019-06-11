@@ -57,10 +57,13 @@ function showValues( values, i ) {
 */
 
 function greaterThan10 (obj, i){
-  for( i =0; i<obj.length; i++) {
-    return i > 10 ? 0 : i;
+  for( var i in obj) 
+    for( var i = 0; i < obj.length; i++) {
+    obj[i] > 10 ? 0 : obj[i];
+    return obj;
+    }
   }
-}
+
 
 
 ////////// PROBLEM 3 //////////
@@ -71,12 +74,11 @@ function greaterThan10 (obj, i){
   Return the updated object.
 */
 
-function double (obj) {
-  for(let i = 0; i<obj.length; i++){
-    obj.push(i * 2);
-    return obj;
+function double (obj, i) {
+  for (var i in obj)
+    return obj[i] * 2;
   }
-}
+
 
 
 
@@ -90,7 +92,10 @@ function double (obj) {
   By the end of the for in loop, you should have a sentence, return that sentence.
 */
 
-//Code Here
+function secrets (obj) {
+  var empty = '';
+  
+}
 
 
 
